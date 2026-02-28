@@ -45,7 +45,7 @@ const SqlQuery = () => {
     setLoading(true);
     setIsCorrect(null);
 
-    const res = await fetch("http://localhost:4040/api/evaluate", {
+    const res = await fetch("https://cipherschools-eu3y.onrender.com/api/evaluate", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -69,7 +69,7 @@ const SqlQuery = () => {
 
     setHintLoading(true);
 
-    const res = await fetch("http://localhost:4040/api/router", {
+    const res = await fetch("https://cipherschools-eu3y.onrender.com/api/router", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
